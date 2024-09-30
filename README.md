@@ -59,6 +59,12 @@ If you've got everything installed correctly, you should see output similar to:
 
 ![Unit Test Results](./docs/TestResults.png)
 
+Update the compiled Lambda package by running the following command in the project directory:
+
+``` bash
+./package.sh
+```
+
 ### Development
 The project was developed using Visual Studio Code and the .vscode directory with three launch configuration is included. Among them is "Run All Tests" configuration which can be used to run all unit tests in the project. Unit tests mock out calls to AWS services so you do not need to worry about tests using the services when executed. A .env.sample file is included which you can use to set the environment variables used by Visual Studio Code. If the .env file is not recognized by Visual Studio Code, ensure that the "python.envFile" setting is set to "${workspaceFolder}/.env".
 
